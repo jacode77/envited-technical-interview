@@ -1,6 +1,7 @@
 * {
   font-family: Helvetica, sans-serif !important;
   text-align: center;
+  box-sizing: border-box;
 }
 body {
   background-color: #f6f2ff;
@@ -17,6 +18,60 @@ header {
   justify-content: space-between;
 }
 
-.home {
-  /* margin: 3rem; */
+.home-title {
+  font-weight: 700 !important;
+  font-size: 2.2rem !important;
+  color: #240d57;
+  margin-bottom: 0 !important;
+  margin-top: 4rem !important;
+  line-height: 1 !important;
+}
+
+.home-title-snap {
+  background-image: linear-gradient(to right, #8456ec 24.2%, #e87bf8 120.46%);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700 !important;
+  font-size: 2.2rem !important;
+  line-height: 1 !important;
+}
+
+.home-title2 {
+  font-weight: 700 !important;
+  font-size: 2.2rem !important;
+  color: #240d57;
+  margin-bottom: 0 !important;
+  line-height: 1 !important;
+}
+
+.img-container {
+  width: 165.63px;
+  height: 292px;
+  margin: auto;
+  margin-top: 2.3rem;
+  border-radius: 20px;
+}
+
+.button-main {
+  background-image: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  color: white !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-transform: inherit !important;
+  width: 11.5rem !important;
+  border-radius: 10px !important;
+  height: 3.2rem !important;
+  margin-top: 2rem !important;
+}
+
+.iphone-search {
+  margin: auto;
+  margin-top: 1rem;
+  border-top: #bdbdbd solid;
+  background-color: white;
+  height: 7rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

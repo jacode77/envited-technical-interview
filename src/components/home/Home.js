@@ -32,87 +32,41 @@ function Home() {
         <Typography
           data-testid="home-container"
           variant="h3"
-          sx={{
-            fontWeight: "700",
-            fontSize: "2.2rem",
-            color: "#240d57",
-            marginBottom: "0",
-          }}
+          className="home-title"
           gutterBottom
         >
           Imagine if
         </Typography>
 
-        <Typography
-          sx={{
-            backgroundImage:
-              "linear-gradient(to right, #8456EC 24.2%, #E87BF8 120.46%)",
-            backgroundClip: "text",
-            color: "transparent",
-            fontWeight: "700",
-            fontSize: "2.2rem",
-          }}
-        >
+        <Typography className="home-title-snap" variant="h3">
           Snapchat
         </Typography>
-        <Typography
-          variant="h3"
-          sx={{ fontWeight: "700", fontSize: "2.2rem", color: "#240d57" }}
-          gutterBottom
-        >
+        <Typography variant="h3" className="home-title2" gutterBottom>
           had events.
         </Typography>
-        <Typography
-          variant="body1 gutterBottom"
-          sx={{
-            color: "#4F4F4F",
-            fontSize: "1rem",
-            lineHeigh: "1rem",
-            boxShadow: "0px 0px 17.6435px rgb(0 0 0 / 5%)",
-          }}
-        >
-          Easily host and share events with your friends across any social
-          media.
-        </Typography>
-        <Card
-          sx={{
-            width: "165.63px",
-            height: "292px",
-            margin: "auto",
-            marginTop: "2rem",
-            borderRadius: "20px",
-          }}
-        >
+        <div style={{ margin: "0 2.5rem" }}>
+          <Typography
+            variant="body1 "
+            sx={{
+              color: "#4F4F4F",
+              fontSize: "1rem",
+              fontWeight: "300",
+              boxShadow: "0px 0px 17.6435px rgb(0 0 0 / 5%)",
+            }}
+          >
+            Easily host and share events with your friends across any social
+            media.
+          </Typography>
+        </div>
+        <Card className="img-container">
           <CardMedia
             component="img"
             image="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ea95af2d-7f06-4f25-859c-9069519053a7/Landing_page_image.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220930%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220930T223741Z&X-Amz-Expires=86400&X-Amz-Signature=f3479648524b4bccce6582c62768ee8b67dbaee12aca11bfe035ca4ca814d8fc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Landing%2520page%2520image.svg%22&x-id=GetObject"
             alt="Movie Night Event"
           />
         </Card>
-        <Button
-          sx={{
-            backgroundImage:
-              "linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%)",
-            color: "white",
-            fontSize: "1rem",
-            fontWeight: 700,
-            textTransform: "inherit",
-            width: "11.5rem",
-            borderRadius: "10px",
-            height: "3.2rem",
-            marginTop: "2rem",
-          }}
-        >
-          🎉 Create my event
-        </Button>
-        <Container
-          sx={{
-            margin: "auto",
-            marginTop: "1rem",
-            borderTop: "#BDBDBD solid",
-            backgroundColor: "white",
-          }}
-        >
+        <Button className="button-main">🎉 Create my event</Button>
+        <Container className="iphone-search">
           <Container
             sx={{
               display: "flex",
@@ -139,7 +93,7 @@ function Home() {
             sx={{
               display: "flex",
               justifyContent: "space-around",
-              marginTop: "0.8rem",
+              marginTop: "0.5rem",
             }}
           >
             <IconContext.Provider
@@ -163,7 +117,12 @@ function Home() {
             </IconContext.Provider>
           </Container>
           <div
-            style={{ borderTop: "5px, black, solid", borderRadius: "5px" }}
+            style={{
+              borderRadius: "5px",
+              borderTop: "4px black solid",
+              width: "50%",
+              marginTop: "1.5rem",
+            }}
           ></div>
         </Container>
       </div>
